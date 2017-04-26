@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.containerSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stressSegment {
+    position: relative;
+    left: 50%;
+	height: 0;
+    transform: translate(-50%, 0);
+}
+
+.stressSegment:nth-child(1) {
+    border-bottom: 30px solid #3a3941;
+    border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    width: 100px;
+}
+
+.stressSegment:nth-child(2) {
+    border-bottom: 30px solid #3a3941;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+    width: 140px;
+}
+
+.stressSegment:nth-child(3) {
+    border-bottom: 30px solid #3a3941;
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+    width: 160px;
+}
+
+.stressSegment:nth-child(4) {
+    border-bottom: 30px solid #3a3941;
+    border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    width: 170px;
+}
+
+.stressSegment:nth-child(5) {
+    border-top: 30px solid #3a3941;
+    border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    width: 170px;
+}
+
+.stressSegment:nth-child(6) {
+    border-top: 30px solid #3a3941;
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+    width: 160px;
+}
+
+.stressSegment:nth-child(7) {
+    border-top: 30px solid #3a3941;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+    width: 140px;
+}
+
+.stressSegment:nth-child(8) {
+    border-top: 30px solid #3a3941;
+    border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    width: 100px;
+}
+
+.breakLine {
+    float: left;
+    margin-top: -1px;
+    width: 0;
+	height: 0;
+	border-top: 10vh solid #3a3941;
+	border-right: 75px solid transparent;
+}
+
+.breakLine:nth-child(2) {
+    border-top: 5vh solid #3a3941;
+	border-right: 38px solid transparent;
+}
+
+.shard {
+    position: absolute;
+    top: 0;
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 50px solid #3a3941;
+    transform-origin: top;
+}
+
+#containerMain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #e8e8e8;
+}
+
+#sectionSecond {
+    background-color: lightgray;
+    height: 68.5vh;
+}
+
+#bigLead {
+    cursor: s-resize;
+    position: absolute;
+    left: 70vw;
+    width: 113px;
+    height: 70vh;
+    background-color: #3a3941;
+    transform: translate(12px, -1.5vh);
+}
+
+#stressContainer {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    width: 200%;
+    transform: translate(-70%, 0) scaleX(0);
+    transition: 100ms;
+}
+
+#breakLineContainer {
+    position: absolute;
+    top: 60vh;
+    left: 70vw;
+    width: 113px;
+    height: 10vh;
+    transform: translate(12px, -1.5vh);
+}
+
+#shardGenerator {
+    z-index: 20;
+    position: absolute;
+    top: 60vh;
+    left: 70vw;
+    transform: translate(63.5px, 0);
+}

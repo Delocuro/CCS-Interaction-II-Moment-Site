@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.containerSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.shard {
+    position: absolute;
+    top: 0;
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 50px solid #3a3941;
+    transform-origin: top;
+}
+
+#containerMain {
+    cursor: ew-resize;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sectionThird {
+    background-color: grey;
+}
+
+#shardGenerator {
+    z-index: 20;
+    position: absolute;
+    top: -40vh;
+    left: 70vw;
+    transform: translate(63.5px, 0);
+}

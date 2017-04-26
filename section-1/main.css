@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.containerSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.drawBox {
+    position: absolute;
+    height: 20px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+#containerMain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sectionFirst {
+    background-color: white;
+}
+
+#lead {
+    cursor: move;
+    z-index: 10;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 80px;
+    height: 150px;
+    background-color: #3a3941;
+    transform: rotate(45deg);
+    transform-origin: bottom;
+}
+
+#leadGuide {
+    z-index: 5;
+    position: absolute;
+    bottom: -28px;
+    left: 70vw;
+    width: 80px;
+    height: 150px;
+    background-color: lightgray;
+    transform: rotate(45deg);
+    transform-origin: bottom;
+    transition: 350ms ease;
+}
